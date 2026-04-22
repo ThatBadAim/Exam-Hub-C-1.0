@@ -1,0 +1,17 @@
+<Window x:Class="ExamLock.Views.ColorPickerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Choose Veil Colour"
+        Width="340" Height="280"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="{StaticResource SurfaceBrush}">
+    <StackPanel Margin="20">
+        <TextBlock Text="Choose a custom veil colour" FontSize="14"
+                   FontWeight="SemiBold" Margin="0,0,0,16"/>
+
+        <WrapPanel x:Name="SwatchPanel"/>
+
+        <Button Content="Cancel" Margin="0,20,0,0" Click="Cancel_Click"/>
+    </StackPanel>
+</Window>
